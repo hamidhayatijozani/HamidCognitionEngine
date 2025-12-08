@@ -1,0 +1,14 @@
+# Sample Input Data for HamidCognition Engine Simulation
+# In a real scenario, these would be derived from market data or external stimuli.
+# Columns: pressure, novelty, freedom
+pressure,novelty,freedom
+0.98,0.99,3.0
+0.85,1.10,2.5
+1.05,0.90,3.2
+0.70,1.25,2.8
+1.15,0.80,3.5
+0.90,1.05,3.1
+1.00,1.00,3.0
+0.75,1.15,2.9
+1.20,0.75,3.3
+0.80,1.20,2.7
