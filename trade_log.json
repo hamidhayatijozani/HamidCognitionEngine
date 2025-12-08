@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "entry_time": "2025-01-01 00:29:00",
+        "type": "SHORT",
+        "entry_price": 1.069435559312447,
+        "stop_loss": 1.0705,
+        "take_profit": 1.0673,
+        "trade_size": 93507.27,
+        "status": "OPEN"
+    },
+    {
+        "id": 1,
+        "entry_time": "2025-01-01 00:29:00",
+        "exit_time": "2025-01-01 05:23:00",
+        "type": "SHORT",
+        "entry_price": 1.069435559312447,
+        "exit_price": 1.070580987749834,
+        "pnl": -107.11,
+        "status": "SL_HIT",
+        "capital_after": 9892.89
+    }
+]
