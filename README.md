@@ -1,34 +1,33 @@
 # HamidCognitionEngine Simulation
 
-This repository contains a simulation of the HamidCognition Engine, based on the description and logic inferred from user-provided code snippets.
+> **Repository status:** Historical simulation lineage.
+>
+> The current canonical research and provenance record is **[HamidCognition-Unified](https://github.com/hamidhayatijozani/HamidCognition-Unified)**. This repository preserves an earlier inferred simulation of P/S/T transition logic and should be cited as a historical artifact.
 
-The core model simulates a cognitive process based on three main variables:
-*   **P (Penetration/Nofuz):** Depth and focus on the problem.
-*   **S (Creative Connection/Ettesal-e Khallagh):** Ability to create new and innovative connections.
-*   **T (Style Stabilization/Tasbit-e Sabk):** Tendency towards structuring and maintaining stability in the method of work.
+## جایگاه پژوهشی
 
-## Files
-
-*   `hamid_cognition_simulation.py`: The Python script containing the inferred `HamidCognition` class, the state transition logic, energy calculation, and phase analysis.
+این repository برای بررسی منطق شبیه‌سازی و تاریخچهٔ مدل مفید است. عبارت `inferred` در این نسخه مهم است: منطق ثبت‌شده باید به‌عنوان implementation/simulation تاریخی خوانده شود، نه به‌عنوان اثبات تجربی مدل شناختی.
 
 ## Simulation Logic (Inferred)
 
-The state transition function (`hamid_step_absolute`) was inferred as:
-*   `P_new = P_old * pressure`
-*   `S_new = S_old * novelty`
-*   `T_new = T_old / freedom`
+The recorded transition function is:
 
-The Cognitive Energy calculation is:
+- `P_new = P_old * pressure`
+- `S_new = S_old * novelty`
+- `T_new = T_old / freedom`
+
+The recorded cognitive-energy expression is:
+
 `energy = (P * S) / (1.1 - T) * (1 - (T / (P + S + 1e-9)))`
 
-## Example Execution
+## Historical execution record
 
-The script was executed with the following initial state and parameters:
-*   **Initial State:** P=1.8235, S=2.1492, T=0.5361
-*   **Parameters:** pressure=0.8, novelty=0.7, freedom=3.0
+The original README records an example execution with initial state `P=1.8235, S=2.1492, T=0.5361`, parameters `pressure=0.8, novelty=0.7, freedom=3.0`, and resulting values. These are historical recorded outputs and should not be presented as an independently reproduced benchmark without a corresponding execution fingerprint.
 
-The resulting analysis is:
-*   **New State (P, S, T):** 1.4588, 1.5044, 0.1787
-*   **Cognitive Energy:** 2.2385
-*   **Phase:** Rupture/Exploration (گسست/کاوش)
-*   **Next Output:** New Input/Direction (ورودی/جهت‌گیری جدید)
+## Citation
+
+برای استناد به این artifact، نام `HamidCognitionEngine` و commit/path دقیق را ذکر کنید. برای وضعیت فعلی تحقیق و رابطهٔ lineage از `HamidCognition-Unified` استفاده کنید.
+
+**Canonical research record:** https://github.com/hamidhayatijozani/HamidCognition-Unified
+
+**Originator:** Hamid Hayati Jozani
