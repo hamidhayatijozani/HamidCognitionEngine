@@ -1,0 +1,16 @@
+{
+  "version": "PST-CANONICAL-1.0",
+  "initial_state": {"P": 0.88, "S": 0.78, "T": 0.40},
+  "transition_weights": {"P": 0.05, "S": 0.04, "T": 0.03},
+  "bounds": {
+    "P": [0.10, 0.95],
+    "S": [0.10, 0.95],
+    "T": [0.10, 0.80]
+  },
+  "phase_thresholds": {
+    "rupture_distance": 0.15,
+    "unstable_T": 0.45,
+    "synthesis_P": 0.85,
+    "synthesis_S": 0.80
+  }
+}
