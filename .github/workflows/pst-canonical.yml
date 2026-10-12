@@ -1,0 +1,28 @@
+name: PST Canonical Contract
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "integrated/ps_t/**"
+      - ".github/workflows/pst-canonical.yml"
+  pull_request:
+    paths:
+      - "integrated/ps_t/**"
+      - ".github/workflows/pst-canonical.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  contract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependency
+        run: python -m pip install --disable-pip-version-check pytest
+      - name: Run canonical contract tests
+        run: python -m pytest -q integrated/ps_t/test_canonical_engine.py
